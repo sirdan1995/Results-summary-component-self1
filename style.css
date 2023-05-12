@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container{
+    display:flex;
+    min-height: 80vh;
+    width:40%;
+    margin: auto;
+    box-shadow: 28px 16px 29px 7px rgba(0, 0, 0, 0.09);
+    border-radius: 30px;
+}
+.result-left{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    background: linear-gradient(0deg, hsla(241, 81%, 54%), hsla(252, 100%, 67%));
+    justify-content: center;
+    border-radius: 30px;
+}
+.left1{
+    color:#ccc5ff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.left2{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        0deg,
+        hsla(241, 72%, 46%, 0),
+        hsla(256, 72%, 46%, 1)
+      );
+    color:white;
+}
+.left2-1{
+    font-size: 48px;
+    font-weight: 800;
+}
+.left2-2{
+    font-size:18px ;
+    color:#ccc5ff
+
+}
+
+.left3{
+    color:white;
+    font-size: 36px;
+    font-weight: 600;
+}
+.left4{
+    color:#ccc5ff;
+    font-size: 18px;
+    width:80%;
+    padding:20px auto;
+}
+.summary-right{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: #414964;
+    border-radius: 30px;
+    justify-content: center;
+}
+.right2{
+    padding:10px 30px;
+}
+.box{
+   display:flex;
+   gap: 10px;
+   padding:10px 30px;
+   margin-bottom: 5px;
+   align-items: center;
+}
+.reaction{
+    background-color: #fff6f5;
+}
+.reaction h3{
+    color: #cf7376;
+    font-weight: 500;
+    font-size: 16px;
+}
+.memory {
+    background-color: #fffbf2;
+}
+.memory h3{
+    color: #eeb53b;
+    font-weight: 500;
+    font-size: 16px;
+}
+.verbal{
+    background-color: #f2fafa;
+}
+.verbal h3{
+    color: #63b3a0;
+    font-weight: 500;
+    font-size: 16px;
+}
+.visual{
+    background-color: #f3f3fd;
+}
+.visual h3{
+    color: #4b54ba;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+button{
+    padding:15px 60px;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 40px;
+    color:white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    background: linear-gradient(0deg, hsla(241, 81%, 54%), hsla(252, 100%, 67%));
+    
+}
+
+@media (max-width: 786px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+
+    }
+    .result-left{
+        height: 50vh;
+    }
+    .summary-right{
+        height: 50vh;
+    }
+}
